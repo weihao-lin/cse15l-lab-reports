@@ -50,7 +50,7 @@ class ChatServer {
 ```
 First `/add-message` example:
 
-![First `/add-message` example](https://github.com/weihao-lin/cse15l-lab-reports/blob/main/asset-987bd72fda0ce3eba3d5ade24e357067.png)
+![First `/add-message` example](asset-987bd72fda0ce3eba3d5ade24e357067.png)
 
 This calls the `getPath()` method first to compare the url path to specifically "/add-message".
 Then, `getQuery()` and `split()` are called to retrieve the information after "/add-message" and split the message from the user, storing both in `String[] parameters`.
