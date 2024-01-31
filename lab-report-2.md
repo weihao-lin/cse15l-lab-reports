@@ -50,7 +50,7 @@ class ChatServer {
 ```
 First `/add-message` example:
 
-![First `/add-message` example](asset-987bd72fda0ce3eba3d5ade24e357067.png)
+![Image](asset-987bd72fda0ce3eba3d5ade24e357067.png)
 
 This calls the `getPath()` method first to compare the url path to specifically "/add-message".
 Then, `getQuery()` and `split()` are called to retrieve the information after "/add-message" and split the message from the user, storing both in `String[] parameters`.
@@ -63,7 +63,7 @@ Then, the formatted message is appended to the arraylist `messages` with `add()`
 using `join()` in order to display everything cleanly on the server.
 
 
-![Second `/add-message` example](https://github.com/weihao-lin/cse15l-lab-reports/blob/main/asset-8b616ef595ac5cd1a1752dd3b163b93d.png)
+![Image](asset-8b616ef595ac5cd1a1752dd3b163b93d.png)
 
 This calls the `getPath()` method first to compare the url path to specifically "/add-message".
 Then, `getQuery()` and `split()` are called to retrieve the information after "/add-message" and split the message from the user, storing both in `String[] parameters`.
@@ -79,13 +79,13 @@ using `join()` in order to display everything cleanly on the server. Since `mess
 # Part 2: SSH
 
 Private key:
-![image](https://github.com/weihao-lin/cse15l-lab-reports/blob/main/asset-4d66993eded5eb46137cd95e379cd0ff.png)
+![image](asset-4d66993eded5eb46137cd95e379cd0ff.png)
 
 Public key:
-![image](https://github.com/weihao-lin/cse15l-lab-reports/blob/main/asset-ce77628ef53c4229bf30c5fdd6b413e2.png)
+![image](asset-ce77628ef53c4229bf30c5fdd6b413e2.png)
 
 SSH:
-![image](https://github.com/weihao-lin/cse15l-lab-reports/blob/main/asset-0d18334f25a99189313504f2917d16fc.png)
+![image](asset-0d18334f25a99189313504f2917d16fc.png)
 
 # Part 3
 
