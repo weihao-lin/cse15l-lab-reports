@@ -52,7 +52,7 @@ First `/add-message` example:
 
 ![Image](asset-987bd72fda0ce3eba3d5ade24e357067.png)
 
-This calls the `getPath()` method first to compare the url path to specifically "/add-message".
+The first method call is `handleRequest()` followed by the `getPath()` method to compare the url path to specifically "/add-message".
 Then, `getQuery()` and `split()` are called to retrieve the information after "/add-message" and split the message from the user, storing both in `String[] parameters`.
 In this case, `parameters[0]` would be `s=hello` and `parameters[1]` would be `user=weihao`.
 A try-catch block finds invalid inputs in the query by checking if the following methods access an out of bounds index from the aforementioned string array.
@@ -61,11 +61,12 @@ These values are stored in `String[] messageParam` and `String[] userParam`, res
 `messageParam` would contain `s` and `hello` while `userParam` would contain `user` and `weihao`.
 Then, the formatted message is appended to the arraylist `messages` with `add()`, and each element in `messages` is combined into a single string `list` with a new line character
 using `join()` in order to display everything cleanly on the server.
+The fields `messages.add(userParam[1] + ": " + messageParam[1] + "\n");` and `list = String.join("\n", messages);` are the two relevant class fields.
 
 
 ![Image](asset-8b616ef595ac5cd1a1752dd3b163b93d.png)
 
-This calls the `getPath()` method first to compare the url path to specifically "/add-message".
+The first method call is `handleRequest()` followed by the `getPath()` method to compare the url path to specifically "/add-message".
 Then, `getQuery()` and `split()` are called to retrieve the information after "/add-message" and split the message from the user, storing both in `String[] parameters`.
 In this case, `parameters[0]` would be `s=hi` and `parameters[1]` would be `user=you`.
 A try-catch block finds invalid inputs in the query by checking if the following methods access an out of bounds index from the aforementioned string array.
@@ -75,10 +76,11 @@ These values are stored in `String[] messageParam` and `String[] userParam`, res
 Then, the formatted message is appended to the arraylist `messages` with `add()`, and each element in `messages` is combined into a single string `list` with a new line character
 using `join()` in order to display everything cleanly on the server. Since `messages` now has two elements, they are joined together into a single string with `\n` between them.
 `list` would be `"weihao: hello \n you: hi"`.
+The relevant class fields are the same from above: `messages.add(userParam[1] + ": " + messageParam[1] + "\n");` and `list = String.join("\n", messages);`.
 
 # Part 2: SSH
 
-Private key:
+Private key: id_rsa
 ![image](asset-4d66993eded5eb46137cd95e379cd0ff.png)
 
 Public key:
