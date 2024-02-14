@@ -47,38 +47,32 @@ The fix pairs each element from the beginning and end together, until the pairs 
 # Part 2: Researching Commands 
 
 Command `grep`: finds lines in files containing certain patterns   
+<br /> 
+<br />
 
 Option 1 `-i`   
 
+<br />
 Input:
 `grep -i ring DraftRecom-PDF.txt`
 
 Output:
-```
-steering committee to consider. During the conference, the steering
-or omissions and offering general comments. He emphasized that the
-from covering preventive services, it must draw a distinction
-departments, underscoring the importance of research in that
-considering grant applications.
-intervention, and injuries are the most common events that bring
-```
-   
+<img width="479" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/3ab88deb-529c-4e87-aa5a-10a768cdedb7">
+
 Input: 
 `grep -i there Session2-PDF.txt`
 
 Output:
-```
-help ensure that positive tests represent real problems. There is a
-confidential since there may be legal, financial, or social
-There are multiple barriers to screening. Nurses identified lack
-the ED, there are even higher case rates in subgroups. Major
-```
+<img width="481" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/ca8e780a-7dcf-4653-a12c-b1a41f758a12">
 
 The `-i` option allows users to search for a pattern, regardless of the case of the pattern. 
 This is useful because some patterns could be starting sentences and therefore in a different case than normal occurences, as seen in the second example above.
+<br />
+<br />
 
 Option 2 `-r`
 
+<br />
 Input:
 `grep -r "political party"`
 
@@ -93,9 +87,12 @@ Output:
 
 The `-r` option allows users to search for a pattern in the current directory, as well as its subdirectories, recursively, until every subdirectory is searched.
 This is useful because for lots of data, searching every directory can take a long time, and `-r` makes finding a needle in a haystack much easier.
+<br />
+<br />
 
 Option 3 `-m`
 
+<br />
 Input:
 `grep -r -m 1 "climate change"`
 
@@ -110,13 +107,32 @@ Output:
 
 The `-m` option allows users to limit the number of lines `grep` prints that matches the pattern, per file.
 This is useful for users who want a broad skim of the files, and lowers the number of files to look through.
+<br />
+<br />
 
 Option 4 `-n`
 
+<br />
 Input:
+`grep -n standard Progress_report.txt`
 
+Output:
+<img width="511" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/a95fe130-3ba4-4fd0-af3f-6f2bb37815b4">
 
+Input:
+`grep -n -i -m 5 "the" Strategic_report.txt`
 
+Output:
+<img width="500" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/66484991-2d98-4d3e-9362-aedc062c925d">
+
+The `-n` option prints the line numbers in front in addition to the lines themselves.
+This is useful for users who want a deeper search and having line numbers also makes finding a line much easier.
+
+<br />
+<br />
+<br />
+
+Command options from `man grep`
 
 
 
