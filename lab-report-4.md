@@ -32,10 +32,10 @@ Keys:
 `bash t<tab><return>`
 
 Step 9:
-<img width="489" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/732d9e0d-04ba-453a-b467-9bda49b08436">
+<img width="479" alt="image" src="https://github.com/weihao-lin/cse15l-lab-reports/assets/156358635/9c1d7310-399a-4279-8df0-4e507046e2b2">
 
 Keys:
-`git add .<return>`, `git commit -m "fixed failing test"<return>`
+`git add .<return>`, `git commit -m "fixed failing test"<return>`, `git push<return>`
 
 
 
