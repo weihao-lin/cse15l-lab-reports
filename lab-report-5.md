@@ -160,10 +160,8 @@ Edit to fix bug: replace `break;` with `return indices;` on line 16.
 
 # Reflection
 
-
-
-
-
-
+I learned that vim can be used to edit files in the terminal, which is very useful for many unforeseen circumstances. The vim tutorial helped a lot with
+learning hotkeys so editing became much faster and easier. That was probably my favorite topic in this class because it felt like something entirely new.
+Other than that, everything else was a bit boring and tedious, but my tutor was great at helping all of us slug through labs.
 
 
