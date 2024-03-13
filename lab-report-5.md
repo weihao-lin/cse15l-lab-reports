@@ -81,7 +81,7 @@ public class submission {
     }
 }
 ```
-4. 
+Directories and files: <br/>
 ```
 lab5/
 |-  starter/
